@@ -1,38 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  max-width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.5rem;
+}
+
+.random_btn {
+  width: 100%;
+  padding: 20px 100px 10px 0;
+}
+
+button {
+  border: none;
+  float: right;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.quote_container {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote_desc {
+  margin-top: 150px;
+  height: 300px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+p {
+  height: 80%;
+  width: 70%;
+  border-left: 4px solid #F7DF94;
+  padding-left: 50px;
+  color: black;
+}
+
+.quote_author {
+  width: 60%;
+  padding-left: 50px;
+  height: 130px;
+  padding: 20px 0 20px 30px;
+  font-size: 1rem;
+  transition: background 0.4s ease;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+span {
+  color: #828282;
+}
+
+.quote_author:hover {
+  background: #333333;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.AllQuotes {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AllQuotes > h2 {
+  margin-bottom: 100px;
+  color: #333333;
+}
+
+
+.quotes_para {
+  margin: 40px 0;
 }
